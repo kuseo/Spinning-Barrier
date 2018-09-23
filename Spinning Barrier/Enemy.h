@@ -10,11 +10,12 @@ public:
 	float Distance = 1.0f;
 	float Speed;
 	float Rotate;
+	bool collide = false;
 
 	/*
 	constructor
 	*/
-	Enemy() : Rotate(0.0f), Speed(100.0f) {}
+	Enemy() : Speed(1.0f), Rotate(0.0f) {}
 	Enemy(float speed, float rotate) : Speed(speed), Rotate(rotate) {}
 
 	/*
