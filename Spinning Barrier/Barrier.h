@@ -14,7 +14,7 @@ public:
 	/*
 	constructor
 	*/
-	Barrier() : Speed(500.0f), Rotate(0.0f), AngleBetween(90) {}
+	Barrier() : Speed(300.0f), Rotate(0.0f), AngleBetween(90) {}
 	Barrier(float speed, float rotate, float AngleBetween) :
 		Speed(speed), Rotate(rotate), AngleBetween(AngleBetween) {}
 
