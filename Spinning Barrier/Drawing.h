@@ -4,7 +4,7 @@
 #include "gl_helper.h"
 #define radian(degree) ((degree)*(3.141592)/180.0f)
 
-void drawBarrier(float radius, int angle)
+void drawBarrier(float radius, float angle)
 {
 	float temp = radius;
 	float x, y;
@@ -25,19 +25,12 @@ void drawEnemy()
 	float w = 1/(float)glutGet(GLUT_WINDOW_WIDTH);
 	float h = 1/(float)glutGet(GLUT_WINDOW_HEIGHT);
 
-	glPointSize(1.0);
-	glBegin(GL_POINTS);
-	for (int i = 0; i <= 20; i++)
-	{
-		float y = (float)i * h;
-		glVertex2f(0.0, y);
-		for (int j = i; j != 0; j--)
-		{
-			glVertex2f((float)j*w, y);
-			glVertex2f((-1)*(float)j*w, y);
-		}
-	}
+	glBegin(GL_TRIANGLES);
+	glVertex2f(w * 20.0f, 0.0f);
+	glVertex2f(w * (-20.0f), 0.0f);
+	glVertex2f(0.0f, h * (-20.0f));
 	glEnd();
+
 }
 
 void drawPrincess()

@@ -154,7 +154,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Barrier.h" />
     <ClInclude Include="Drawing.h" />
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="gl_helper.h" />
     <ClInclude Include="Init.h" />
   </ItemGroup>
