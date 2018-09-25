@@ -10,7 +10,7 @@ void Initialize(int argc, char **argv)
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
 	glutInitWindowPosition(0, 0);
 	glutInitWindowSize(DIM, DIM);
-	glutCreateWindow("Spinning Barrier");
+	glutCreateWindow("Game");
 
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA); 
 	glEnable(GL_BLEND);
